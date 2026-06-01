@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your shopping cart at FreshHarvest.">
+  <title>Your Cart | FreshHarvest</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍎</span>
+        FreshHarvest
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html" class="cart-link">
+              🛒 Cart <span class="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Your Cart</h1>
+        <p>Review your items and proceed to checkout when you're ready.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cart-layout">
+        <div id="cart-container"></div>
+        <aside id="cart-summary" class="cart-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="shipping">GH₵25.00</span>
+          </div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem">Free delivery on orders over GH₵150</p>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="total">$0.00</span>
+          </div>
+          <button id="checkout-btn" class="btn btn-primary">Proceed to Checkout</button>
+          <a href="shop.html" class="btn btn-outline" style="margin-top:0.75rem;display:block;text-align:center">Continue Shopping</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="checkout-modal" class="modal-overlay" role="dialog" aria-labelledby="modal-title">
+    <div class="modal">
+      <h2 id="modal-title">Order Placed! 🎉</h2>
+      <p>Thank you for shopping with FreshHarvest. Your fresh fruits are on their way!</p>
+      <button id="modal-close" class="btn btn-primary">Continue Shopping</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🍎</span>
+          FreshHarvest
+        </a>
+        <p>Premium farm-fresh fruits for families who care about quality, taste, and sustainability.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>fruits@fruitapp.com</li>
+          <li>020xxxxxxx</li>
+          <li>Accra, University of Ghana</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FreshHarvest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/fruits.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

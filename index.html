@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshHarvest — premium farm-fresh fruits delivered to your door.">
+  <title>FreshHarvest | Premium Farm-Fresh Fruits</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍎</span>
+        FreshHarvest
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html" class="cart-link">
+              🛒 Cart <span class="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Nature's Finest, <span>Delivered Fresh</span></h1>
+          <p>Hand-picked Ghanaian fruits from trusted local farms. Add your favorites to the cart and enjoy farm-fresh quality every day.</p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+            <a href="about.html" class="btn btn-secondary">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/fruits.jpg" alt="Colorful assortment of fresh fruits">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Why Choose FreshHarvest?</h2>
+        <p class="section-subtitle">We source from Ghanaian farmers to bring you the freshest local fruits — every season.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🌱</div>
+            <h3>Farm Fresh</h3>
+            <p>Picked at peak ripeness and delivered within 48 hours of harvest.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h3>Quality Guaranteed</h3>
+            <p>Not satisfied? We'll replace your order or refund you — no questions asked.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Free Shipping</h3>
+            <p>Enjoy free delivery on all orders over GH₵150 across Accra and beyond.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🍊</div>
+            <h3>Wide Selection</h3>
+            <p>From local mangoes and pineapples to pawpaw and soursop — authentic Ghanaian fruits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-alt);">
+      <div class="container">
+        <h2 class="section-title">Featured Fruits</h2>
+        <p class="section-subtitle">Customer favorites — add them to your cart in one click.</p>
+        <div id="featured-products" class="products-grid"></div>
+        <p style="text-align: center; margin-top: 2.5rem;">
+          <a href="shop.html" class="btn btn-outline">View All Fruits</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🍎</span>
+          FreshHarvest
+        </a>
+        <p>Premium farm-fresh fruits for families who care about quality, taste, and sustainability.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>fruits@fruitapp.com</li>
+          <li>020xxxxxxx</li>
+          <li>Accra, University of Ghana</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FreshHarvest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/fruits.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
